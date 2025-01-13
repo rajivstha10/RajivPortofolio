@@ -85,6 +85,8 @@ const Copyright = styled.p`
 `;
 
 function Footer() {
+  const currentYear = new Date().getFullYear(); // Get the current year dynamically
+
   return (
     <FooterContainer>
       <FooterWrapper>
@@ -103,7 +105,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Rajiv Shrestha. All rights reserved.
+          &copy; {currentYear} Rajiv Shrestha. All rights reserved.
         </Copyright>
 
       </FooterWrapper>
